@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "ASP.NET Core Fundamentals Conference",
+    "description": "A conference covering the fundamentals of ASP.NET Core MVC.",
+    "startDate": "2026-03-15T00:00:00",
+    "endDate": "2026-03-16T00:00:00",
+    "maxParticipants": 300,
+    "categoryId": 1
+  },
+  {
+    "id": 2,
+    "title": "Modern Web Development Conference",
+    "description": "Topics: MVC, REST, validation, and security basics for web apps.",
+    "startDate": "2026-05-20T00:00:00",
+    "endDate": "2026-05-21T00:00:00",
+    "maxParticipants": 400,
+    "categoryId": 1
+  },
+  {
+    "id": 3,
+    "title": "Model Binding and Validation Workshop",
+    "description": "Hands-on workshop focused on model binding and validation.",
+    "startDate": "2026-04-10T00:00:00",
+    "endDate": "2026-04-10T00:00:00",
+    "maxParticipants": 40,
+    "categoryId": 2
+  },
+  {
+    "id": 4,
+    "title": "Razor Forms Workshop",
+    "description": "Build forms with tag helpers and display validation messages properly.",
+    "startDate": "2026-04-24T00:00:00",
+    "endDate": "2026-04-24T00:00:00",
+    "maxParticipants": 35,
+    "categoryId": 2
+  },
+  {
+    "id": 5,
+    "title": "Clean Controllers Seminar",
+    "description": "How to keep controller actions small and predictable with ModelState.",
+    "startDate": "2026-06-05T00:00:00",
+    "endDate": "2026-06-05T00:00:00",
+    "maxParticipants": 120,
+    "categoryId": 3
+  },
+  {
+    "id": 6,
+    "title": "Validation Best Practices Seminar",
+    "description": "Server-side validation patterns and common mistakes in MVC apps.",
+    "startDate": "2026-06-12T00:00:00",
+    "endDate": "2026-06-12T00:00:00",
+    "maxParticipants": 120,
+    "categoryId": 3
+  },
+  {
+    "id": 7,
+    "title": "EF Core Essentials Training",
+    "description": "DbContext, migrations, relationships, and seeding essentials.",
+    "startDate": "2026-02-17T00:00:00",
+    "endDate": "2026-02-18T00:00:00",
+    "maxParticipants": 80,
+    "categoryId": 4
+  },
+  {
+    "id": 8,
+    "title": "Testing MVC Forms Training",
+    "description": "Practice form submissions, invalid model states, and error rendering.",
+    "startDate": "2026-07-07T00:00:00",
+    "endDate": "2026-07-08T00:00:00",
+    "maxParticipants": 70,
+    "categoryId": 4
+  },
+  {
+    "id": 9,
+    "title": "Sofia .NET Meetup",
+    "description": "Community meetup: mini talks and networking for .NET developers.",
+    "startDate": "2026-03-28T00:00:00",
+    "endDate": "2026-03-28T00:00:00",
+    "maxParticipants": 150,
+    "categoryId": 5
+  },
+  {
+    "id": 10,
+    "title": "Student Projects Meetup",
+    "description": "Students present their projects and discuss common issues and fixes.",
+    "startDate": "2026-05-09T00:00:00",
+    "endDate": "2026-05-09T00:00:00",
+    "maxParticipants": 150,
+    "categoryId": 5
+  },
+  {
+    "id": 11,
+    "title": "MVC Mini Hackathon",
+    "description": "Build a small MVC app with validation rules under time constraints.",
+    "startDate": "2026-08-01T00:00:00",
+    "endDate": "2026-08-02T00:00:00",
+    "maxParticipants": 60,
+    "categoryId": 6
+  }
+]

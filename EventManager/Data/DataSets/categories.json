@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "Conference" },
+  { "id": 2, "name": "Workshop"},
+  { "id": 3, "name": "Seminar" },
+  { "id": 4, "name": "Training" },
+  { "id": 5, "name": "Meetup" },
+  { "id": 6, "name": "Hackathon" },
+  { "id": 7, "name": "Webinar" },
+  { "id": 8, "name": "Bootcamp" }
+]

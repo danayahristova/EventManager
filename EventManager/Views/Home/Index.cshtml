@@ -1,8 +1,48 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+    <div class="col-md-6">
+        <div class="text-center mb-4">
+            <h1>Event Management</h1>
+            <p class="text-muted">Choose an option below to get started</p>
+        </div>
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body text-center">
+                <h4 class="card-title">Events</h4>
+                <p class="card-text">View all available events.</p>
+                <a asp-controller="Events"
+                   asp-action="Index"
+                   class="btn btn-primary">
+                    View Events
+                </a>
+            </div>
+        </div>
+
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body text-center">
+                <h4 class="card-title">Create an Event</h4>
+                <p class="card-text">Create a new event.</p>
+                <a asp-controller="Events"
+                   asp-action="Create"
+                   class="btn btn-success">
+                    Create Event
+                </a>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body text-center">
+                <h4 class="card-title">Registrations</h4>
+                <p class="card-text">Manage event registrations.</p>
+                <a asp-controller="Registrations"
+                   asp-action="Index"
+                   class="btn btn-info">
+                    View Registrations
+                </a>
+            </div>
+        </div>
+
+    </div>
 </div>

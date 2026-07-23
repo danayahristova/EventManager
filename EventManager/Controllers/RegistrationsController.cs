@@ -28,11 +28,18 @@ namespace EventManager.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Registration registration)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                return View(nameof(Create));
+                return View(nameof(Create), registration);
             }
-            
+            var @event = await dbContext.Events
+                .Select(e => new { e.MaxParticipants, e.Id, RegistrationsCount = e.Registrations.Count})
+                .FirstAsync(e => e.Id == registration.EventId);
+            if(@event.MaxParticipants <= @event.RegistrationsCount)
+            {
+                ModelState.AddModelError(string.Empty, "The event is full. You cannot register for this event.");
+                return View(nameof(Create), registration);
+            }
             await dbContext.Registrations.AddAsync(registration);
             await dbContext.SaveChangesAsync();
 

@@ -12,7 +12,7 @@ namespace EventManager.Data.Models
         [ForeignKey(nameof(EventId))]
         public int EventId { get; set; }
 
-        public Event Event { get; set; } = null!;
+        public Event? Event { get; set; } = null!;
 
         [Required]
         [StringLength(

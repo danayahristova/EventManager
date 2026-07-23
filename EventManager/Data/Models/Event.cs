@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EventManager.Data.Models
 {
-    public class Event
+    public class Event : IValidatableObject
     {
         public int Id { get; set; }
 
@@ -39,5 +39,15 @@ namespace EventManager.Data.Models
 
         public ICollection<Registration> Registrations { get; set; }
             = new List<Registration>();
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+
+            if (EndDate <= StartDate)
+            {
+                yield return new ValidationResult(
+                    "End date must be later than start date.",
+                    new[] { nameof(EndDate), nameof(StartDate) });
+            }
+        }
     }
 }

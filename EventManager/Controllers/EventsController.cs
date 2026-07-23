@@ -52,7 +52,17 @@ namespace EventManager.Controllers
         [HttpPost]
         public IActionResult Create(Event @event)
         {
-            
+            if(!ModelState.IsValid)
+            {
+                ViewBag.Categories = dbContext.Categories
+                    .Select(c => new SelectListItem
+                    {
+                        Value = c.Id.ToString(),
+                        Text = c.Name
+                    })
+                    .ToList();
+                return View(@event);
+            }
             dbContext.Events.Add(@event);
             dbContext.SaveChanges();
             return RedirectToAction("Index");
